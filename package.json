@@ -1,6 +1,6 @@
 {
   "name": "react-native-enriched-markdown",
-  "version": "1.1.0-wim.1",
+  "version": "1.1.0-wim.2",
   "description": "WIM fork: Markdown rich text input with custom emoji attachments (from react-native-enriched-markdown)",
   "main": "./lib/module/index",
   "module": "./lib/module/index",

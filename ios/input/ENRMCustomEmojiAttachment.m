@@ -1,4 +1,5 @@
 #import "ENRMCustomEmojiAttachment.h"
+#import <React/RCTUtils.h>
 
 @interface ENRMCustomEmojiAttachment ()
 @property (nonatomic, copy) NSString *imageUri;
