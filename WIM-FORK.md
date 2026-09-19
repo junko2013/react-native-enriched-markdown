@@ -17,3 +17,7 @@ Android stubs the new commands; WIM mobile falls back to overlay on Android.
 ## Versioning
 
 Fork releases use `1.1.0-wim.N` while tracking upstream nightly. WIM pins this repo by git commit in `apps/mobile/package.json`.
+
+## Developing this fork
+
+Published `lib/` and codegen outputs are committed so WIM can install via git without running upstream devDependencies (tree-sitter grammars, builder-bob). To rebuild from source, restore devDependencies from upstream tag `1.1.0-nightly-20260912-4c1270f48` in `software-mansion/enriched-markdown/packages/react-native-enriched-markdown`, then run upstream build scripts locally.
