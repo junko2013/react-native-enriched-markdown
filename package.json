@@ -34,7 +34,7 @@
     "docs"
   ],
   "scripts": {
-    "postinstall": "node postinstall.mjs",
+    "postinstall": "node -e \"process.exit(0)\"",
     "build:wasm": "bash ../core/cpp/wasm/build.sh",
     "typecheck": "tsc",
     "test": "jest",
@@ -49,8 +49,7 @@
     "vendor-grammars": "node ../../vendor/vendor-grammars.mjs",
     "vendor-ratex": "node ../../vendor/vendor-ratex.mjs",
     "prepack": "bash ../../scripts/prepare-npm-publish.sh prepack",
-    "postpack": "bash ../../scripts/prepare-npm-publish.sh postpack",
-    "prepare": "yarn vendor-grammars && yarn vendor-ratex && bob build"
+    "postpack": "bash ../../scripts/prepare-npm-publish.sh postpack"
   },
   "keywords": [
     "react-native",
