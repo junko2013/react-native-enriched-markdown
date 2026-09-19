@@ -46,10 +46,8 @@
     "lint-clang:fix": "yarn lint-clang:ios:fix && yarn lint-clang:android:fix",
     "clean": "del-cli android/build lib",
     "sync-md4c": "bash ../../scripts/fetch-md4c.sh",
-    "vendor-grammars": "node ../../vendor/vendor-grammars.mjs",
-    "vendor-ratex": "node ../../vendor/vendor-ratex.mjs",
-    "prepack": "bash ../../scripts/prepare-npm-publish.sh prepack",
-    "postpack": "bash ../../scripts/prepare-npm-publish.sh postpack"
+    "vendor-grammars": "node vendor-grammars.mjs",
+    "vendor-ratex": "node vendor-ratex.mjs"
   },
   "keywords": [
     "react-native",
